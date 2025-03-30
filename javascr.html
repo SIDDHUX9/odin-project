@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function scope example</title>
 </head>
 <style>
     body {
-        background-color: rgb(52, 51, 51);
+        background-color: black;
     }
 
     body h1 {
         color: aqua;
-        text-align: center;
     }
 </style>
 
 <body>
     <h1>ODIN-PROJECT</h1>
+
     <script>
-        function hello(name = "Chris") {
-            console.log(`Hello ${name}!`);
+        function upperc(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
         }
+        console.log(upperc("JaY"));
+        console.log(upperc("RAjpUtana"));
 
-        hello("Ari"); // Hello Ari!
     </script>
-
 </body>
 
 </html>
