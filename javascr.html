@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        background-color: rgb(52, 51, 51);
+    }
+
+    body h1 {
+        color: aqua;
+        text-align: center;
+    }
+</style>
 
 <body>
     <h1>ODIN-PROJECT</h1>
     <script>
-        const max = 57;
-        const actual = max - 13;
-        const percentage = (actual / max);
-        console.log(percentage);
+        function hello(name = "Chris") {
+            console.log(`Hello ${name}!`);
+        }
+
+        hello("Ari"); // Hello Ari!
     </script>
 
 </body>
