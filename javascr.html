@@ -7,20 +7,39 @@
     <title>learnjs</title>
 </head>
 <style>
-    * {
-        background-color: rgb(0, 0, 0);
+    body {
+        background-color: rgb(116, 102, 102);
     }
 </style>
 
-<body>
-    <h1 style="color: aqua;">ODIN - PROJECT </h1>
-</body>
-<script>
-    const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+<!-- your HTML file: -->
 
-    for (let i = 0; i < cats.length; i++) {
-        console.log(cats[5] + " " + cats[i]);
-    }
+<body>
+    <h1>ODIN-PROJECT</h1>
+    <div id="heading"></div>
+
+    <div id="container"></div>
+</body>
+
+<script>
+    const container = document.querySelector("#container");
+    const div = document.createElement('div');
+    div.style.border = '1px solid black';
+    div.style.backgroundColor = 'pink';
+
+    // Create elements to go inside the div
+    const divHeading = document.createElement('h1');
+    divHeading.textContent = "I'm in a div";
+
+    const divParagraph = document.createElement('p');
+    divParagraph.textContent = "ME TOO!";
+
+    // Append elements to the div
+    div.appendChild(divHeading);
+    div.appendChild(divParagraph);
+
+    // Append the div to the container
+    container.appendChild(div);
 
 </script>
 
