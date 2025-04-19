@@ -2,43 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learnjs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learnjs</title>
 </head>
 <style>
-    body {
-        background-color: rgb(116, 102, 102);
-    }
+  body {
+    background-color: rgb(116, 102, 102);
+  }
 </style>
 
 <!-- your HTML file: -->
 
 <body>
-    <h1>ODIN-PROJECT</h1>
-    <div id="heading"></div>
+  <h1>ODIN-PROJECT</h1>
+  <div id="heading"></div>
 
-    <div id="container"></div>
+  <div id="container"></div>
+  <!-- the HTML file -->
+  <button id="btn">Click Me Too</button>
+
+
 </body>
 
 <script>
-    const container = document.querySelector("#container");
-    const div = document.createElement("div");
-    div.style.border = '3px solid black';
-    div.style.backgroundColor = 'pink';
-    div.textContent = " i am inside div";
-    div.style.color = 'aqua';
+  function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+  const btn = document.querySelector("#btn");
 
-    const divhead = document.createElement('h1');
-    divhead.textContent = "i m in"
+  btn.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+  });
 
-    const para = document.createElement("p");
-    para.textContent = "me too";
-
-    div.appendChild(divhead);
-    div.appendChild(para);
-
-    container.appendChild(div);
 </script>
 
 </html>
